@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Befor and After pseudo selector</title>
+    <style>
+     body{
+         margin: 0;
+         padding: 0;
+         background-color: black;
+         color: white;
+         background: url("https://source.unsplash.com/user/erondu/1600x900")no-repeat center center/cover;
+     }
+     header::before{
+        background: url("https://source.unsplash.com/user/erondu/1600x900")no-repeat center center/cover;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.3; 
+     }
+     .navigation{
+         font-family: Georgia, 'Times New Roman', Times, serif;
+         font-size: 20px;
+         display: flex;
+     }
+     li{
+         list-style: none;
+         padding: 34px;
+     }
+     section{
+         
+         margin: 3px 23px;
+         height: 400px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+     }
+     h3{
+         font-size: 4rem;
+     }
+     p{
+         text-align: center;
+     }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About us</li>
+                <li class="item">Service</li>
+                <li class="item">Contact us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h3>Welcome to coding world.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore molestiae voluptatum dolorem! Molestiae voluptatem dolores inventore, mollitia id ipsum quas laudantium odio magni labore a commodi sequi voluptate nisi eligendi.</p>
+    </section>
+
+</body>
+</html>

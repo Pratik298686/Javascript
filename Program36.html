@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Frames</title>
+</head>
+<style>
+   .container{
+       display: flex;
+       background-color: yellow;
+   }
+   .box{
+       background-color: green;
+       width: 250px;
+       height: 250px;
+       position: relative;
+       /*animation-name: pratik;*/
+       animation-name: pratik2;
+       animation-duration: 2s;
+       animation-iteration-count: 3;
+       /*animation-fill-mode: alternate;
+       animation-timing-function: ease-in-out;
+       /*animation-delay: 3s;
+       animation-direction: reverse;
+       animation: animation-name animation-direction animation-timing-function animation-delay animation-iteration-count
+       animation-fill-mode ;*/
+       animation: pratik2 5s ease-in 1s 12 backwards ;
+   }
+   @keyframes pratik2 {
+       0%{
+         top: 0px;
+         left: 0px;
+       }
+       25%{
+         top: 250px;
+         left: 0px;
+       }
+       75%{
+         top: 250px;
+         left: 250px;
+       }
+       100%{
+         top: 0px;
+         left: 250px;
+       }
+   }
+   @keyframes pratik {
+       form{
+           width: 200px;
+       }
+       to{
+           width: 400px;
+       }
+       
+   }
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+            this is box
+        </div>
+    </div>
+</body>
+</html>
