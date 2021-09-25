@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: navy;
+        }
+        .container{
+            background-color: rgb(240, 233, 233);
+            border: 3px solid rgb(95, 7, 122);
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            /* padding: 23px 56px 6px 78px; padding = top right bottom left
+               padding: 34px 19px; padding: y(top/bottom) x(left/right);
+               margin: 34px 19px; padding: y(top/bottom) x(left/right);*/
+            margin-top: 34px;
+            margin-bottom: 34px;
+            margin-left: 34px;
+            margin-right: 34px;
+            border-radius: 23px;
+            width: 533px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>this is my heading</h3>
+        <p id="first">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis laborum fugit voluptas, laudantium, a quasi, rerum neque odio excepturi reprehenderit quaerat esse ratione?</p>
+    </div>
+    <div class="container">
+        <h3>this is my second heading</h3>
+        <p id="second">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis laborum fugit voluptas, laudantium, a quasi, rerum neque odio excepturi reprehenderit quaerat esse ratione?</p>
+    </div>
+    <div class="container">
+        <h3>this is my third heading</h3>
+        <p id="third">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis laborum fugit voluptas, laudantium, a quasi, rerum neque odio excepturi reprehenderit quaerat esse ratione?</p>
+    </div>
+</body>
+</html>
