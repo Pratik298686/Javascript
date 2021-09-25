@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript and ClearTimeout</title>
+</head>
+<body>
+    <div class="container">
+        This is container.
+    </div>
+    <script>
+        console.log("This is tutorial 58");
+        //setTimeout--> Allows us to run the function once after the interval of time
+        //clearTimeout--> Allows us to run the function repeatdly after the interval of time
+        function greet(name,byeText) {
+            console.log("Hello Good Morning " +name+""+byeText);
+        }
+        /*timeout=setTimeout(greet,5000,"Pratik","Take care");
+        console.log(timeout);
+        clearTimeout(timeout);
+        //setTimeout(greet(),5000);--> wrong as it is calling the function inside setTimeout
+        intervalid=setInterval(greet,1000,"Pratik","Good Night");
+        clearInterval(intervalid);*/
+        function displayTime(){
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time;
+        }
+        setInterval(displayTime,1000);
+    </script>
+</body>
+</html>
